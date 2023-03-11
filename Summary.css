@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Miriam+Libre&display=swap");
+body {
+  max-width: 1500px;
+  background-color: darkslateblue;
+}
+
+.My_photo img {
+  max-width: 100%;
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px rgb(255, 255, 255);
+}
+.My_photo {
+  border-block-start: 3px solid white;
+  animation: COLOR 2s ease infinite;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background: linear-gradient(rgb(101, 101, 238), darkslateblue);
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+@keyframes COLOR {
+  0% {
+    
+  }
+  50% {
+    background: linear-gradient(rgb(101, 101, 238), darkslateblue);
+  }
+}
+.Text {
+  font-family: Miriam Libre;
+  padding: 20px;
+  font-size: calc(7px + 20 * (100vw / 1500));
+}
+.Text p span {
+  color: aliceblue;
+}
+.personal_information {
+  border-block-start: 3px solid white;
+  padding-left: 40px;
+  color: aliceblue;
+  font-size: calc(11px + 19 * (100vw / 1500));
+}
+.personal_information h1 {
+  font-size: calc(11px + 22 * (100vw / 1500));
+  font-family: Michroma;
+  color: darkgray;
+}
+.personal_information li {
+  font-family: Miriam Libre;
+  padding: 10px;
+  list-style-image: url(img/check.png);
+}
+.personal_info{
+  border-block-start: 3px solid white;
+  padding-left: 40px;
+  color: aliceblue;
+  font-size: calc(11px + 19 * (100vw / 1500));
+}
+.personal_info h1 {
+  font-size: calc(11px + 22 * (100vw / 1500));
+  font-family: Michroma;
+  color: darkgray;
+}
+.personal_info li {
+  font-family: Miriam Libre;
+  padding: 10px;
+  list-style-type: none;
+}
+.experience {
+  font-family: Miriam Libre;
+  padding-left: 40px;
+  color: aliceblue;
+  font-size: calc(11px + 19 * (100vw / 1500));
+}
+.experience h1 {
+  font-size: calc(11px + 22 * (100vw / 1500));
+  font-family: Michroma;
+  color: darkgray;
+}
+.TEXT {
+  font-family: Miriam Libre;
+  margin-top: 80px;
+  color: darkgray;
+  text-align: center;
+  font-size: calc(11px + 32 * (100vw / 1500));
+}
+.My_progect {
+
+  margin-bottom: 100px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.progect1 a {
+  font-family: Michroma;
+  border-radius: 30px;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: calc(8px + 17 * (100vw / 1500));
+  border: 2px solid;
+  padding: 16px;
+
+  background-image: linear-gradient(
+    to right,
+    #9eefe1 0%,
+    #4830f0 51%,
+    #9eefe1 100%
+  );
+}
+.progect1 a:hover {
+  opacity: 80%;
+  box-shadow: 0 0 15px 0 #3498db inset, 0 0 10px 4px #3498db;
+  background-image: linear-gradient(to right, #9eefe1 0%, #4830f0 80%);
+}
+.About_Me {
+  margin-top: 70px;
+  font-family: Miriam Libre;
+  padding-left: 40px;
+  color: aliceblue;
+  font-size: calc(11px + 19 * (100vw / 1500));
+}
+.About_Me h1 {
+  font-size: calc(11px + 22 * (100vw / 1500));
+  font-family: Michroma;
+  color: darkgray;
+}
+
+@media (max-width: 649px) {
+  .My_photo img {
+    width: 180px !important;
+    height: 220px !important;
+  }
+  .My_photo {
+    margin: 20px;
+  }
+}
